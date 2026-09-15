@@ -185,7 +185,7 @@
 	}
 
 	.main-header .header-upper {
-		background-color: rgba(15,15,15,0.90);
+		background-color: rgba(250, 248, 244, 0.10);
 	}
 	
 	.header-style-three .header-upper {
@@ -328,7 +328,7 @@
 	}
 	
 	.header-style-five .header-lower{
-		background-color:#dfb162;
+		background-color:#b98278;
 	}
 	
 	.header-style-five .outer-box .search-box-btn{
@@ -513,7 +513,7 @@
 	.main-menu .navigation > li.dropdown > a:before,
 	.main-menu .navigation > li > ul > li > a::before,
 	.main-menu .navigation > li > ul > li > ul > li > a::before{
-		color:#ffffff !important;
+		color:#373331 !important;
 		right:15px;
 		font-size:16px;
 		display:none !important;
@@ -585,7 +585,7 @@
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
 		padding:12px 20px !important;
 		line-height:22px;
-		color:#ffffff;
+		color:#555b57;
 		font-weight:500;
 		font-size:15px;
 		background:#4d273f;
@@ -604,7 +604,7 @@
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
 		background:#4d273f;
-		color:#ffffff !important;
+		color:#555b57 !important;
 	}
 	
 	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
@@ -703,7 +703,7 @@
 	
 	.header-style-five .header-lower,
 	.header-style-five .fixed-outer{
-		background-color:#dfb162;
+		background-color:#b7cdb9;
 	}
 	
 	.header-style-five .header-lower .nav-outer{
@@ -843,11 +843,12 @@
 	.main-slider .slide .image-layer:before{
 		content:'';
 		position:absolute;
+		inset: 0;
 		left:0;
 		top:0;
 		width:100%;
 		height:100%;
-		background:rgba(0,0,0,0.25);	
+		background:rgba(0, 0, 0, 0.4);	
 	}
 
 	.shop-banner-section .content-box{
@@ -1086,7 +1087,7 @@
 		right: 0;
 		width: 100%;
 		height: 100%;
-		border: 1px solid #e9c37a;
+		border: 1px solid #b98278;
 		background: none;
 	}
 	
@@ -1161,11 +1162,11 @@
 	.main-header .header-top .info-list li.quote a{
 		text-transform:capitalize;
 		font-weight:400;
-		color: #8c8c8c;	
+		color: #555b57;	
 	}
 	
 	.main-header .header-top .info-list li a:hover{
-		color:#dfb162 !important;	
+		color:#6f625b !important;	
 	}
 	
 	.cart-section .apply-coupon .form-group{
