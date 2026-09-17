@@ -1,0 +1,90 @@
+<svg viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Tallo principal -->
+    <path d="M70 650 
+           C120 560, 125 480, 160 400
+           C205 300, 270 210, 330 80" fill="none" stroke="#6F625B" stroke-width="8" stroke-linecap="round"></path>
+
+    <!-- Ramificación superior -->
+    <path d="M240 260 
+           C210 220, 205 180, 220 140" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+
+    <!-- Ramificación media izquierda -->
+    <path d="M165 390 
+           C120 350, 90 320, 75 270" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+
+    <!-- Ramificación inferior -->
+    <path d="M115 520 
+           C70 480, 55 430, 60 390" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+
+
+    <!-- Hojas -->
+    <g fill="#A8B5A2">
+
+        <!-- hoja punta -->
+        <path d="
+            M315 95
+            C350 55, 390 70, 360 105
+            C340 125, 315 120, 315 95 Z
+        "></path>
+
+        <path d="
+            M260 180
+            C300 145, 335 165, 300 205
+            C275 225, 255 210, 260 180 Z
+        "></path>
+
+
+        <path d="
+            M205 300
+            C250 265, 280 290, 245 330
+            C220 350, 200 335, 205 300 Z
+        "></path>
+
+
+        <path d="
+            M135 385
+            C90 350, 55 370, 90 410
+            C115 430, 140 420, 135 385 Z
+        "></path>
+
+
+        <path d="
+            M90 500
+            C45 460, 15 485, 50 525
+            C75 545, 100 530, 90 500 Z
+        "></path>
+
+
+        <path d="
+            M165 470
+            C205 430, 240 455, 205 495
+            C180 515, 160 500, 165 470 Z
+        "></path>
+
+    </g>
+
+
+    <!-- Nervaduras sutiles -->
+    <g fill="none" stroke="#6F625B" stroke-width="2" opacity="0.5">
+
+        <path d="M325 95 L355 90"></path>
+        <path d="M270 190 L305 175"></path>
+        <path d="M215 310 L250 290"></path>
+        <path d="M120 395 L85 380"></path>
+        <path d="M75 505 L45 495"></path>
+
+    </g>
+
+
+    <!-- Pequeños detalles beige -->
+    <g fill="#E8DED2">
+
+        <circle cx="330" cy="75" r="5"></circle>
+        <circle cx="250" cy="165" r="4"></circle>
+        <circle cx="190" cy="285" r="4"></circle>
+        <circle cx="110" cy="365" r="5"></circle>
+
+    </g>
+
+</svg>
