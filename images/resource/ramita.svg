@@ -1,89 +1,304 @@
 <svg viewBox="0 0 400 700" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Tallo principal -->
-    <path d="M70 650 
-           C120 560, 125 480, 160 400
-           C205 300, 270 210, 330 80" fill="none" stroke="#6F625B" stroke-width="8" stroke-linecap="round"></path>
+    <defs>
 
-    <!-- Ramificación superior -->
-    <path d="M240 260 
-           C210 220, 205 180, 220 140" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+        <!-- Sombra -->
+        <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+            <feDropShadow dx="4" dy="7" stdDeviation="6" flood-color="#6F625B" flood-opacity="0.20"></feDropShadow>
+        </filter>
 
-    <!-- Ramificación media izquierda -->
-    <path d="M165 390 
-           C120 350, 90 320, 75 270" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+        <!-- Desenfoque muy suave -->
+        <filter id="softBlur">
+            <feGaussianBlur stdDeviation="1.4"></feGaussianBlur>
+        </filter>
 
-    <!-- Ramificación inferior -->
-    <path d="M115 520 
-           C70 480, 55 430, 60 390" fill="none" stroke="#6F625B" stroke-width="5" stroke-linecap="round"></path>
+        <!-- Gradiente de las flores -->
+        <radialGradient id="flower" cx="45%" cy="40%">
+
+            <stop offset="0%" stop-color="#F0E5DC"></stop>
+
+            <stop offset="65%" stop-color="#DFCBC0"></stop>
+
+            <stop offset="100%" stop-color="#CBAFA3"></stop>
+
+        </radialGradient>
+
+    </defs>
 
 
-    <!-- Hojas -->
-    <g fill="#A8B5A2">
+    <!-- ================================================= -->
+    <!-- RAMA -->
+    <!-- ================================================= -->
 
-        <!-- hoja punta -->
+    <g filter="url(#shadow)">
+
+        <!-- Tallo principal -->
         <path d="
-            M315 95
-            C350 55, 390 70, 360 105
-            C340 125, 315 120, 315 95 Z
-        "></path>
+                M65 650
+                C100 590 115 520 145 440
+                C175 360 210 300 255 235
+                C290 180 320 120 345 60
+            " fill="none" stroke="#6F625B" stroke-width="7" stroke-linecap="round"></path>
 
+
+        <!-- Rama superior -->
         <path d="
-            M260 180
-            C300 145, 335 165, 300 205
-            C275 225, 255 210, 260 180 Z
-        "></path>
+                M255 235
+                C235 195 225 155 235 115
+            " fill="none" stroke="#6F625B" stroke-width="4.5" stroke-linecap="round"></path>
 
 
+        <!-- Rama superior derecha -->
         <path d="
-            M205 300
-            C250 265, 280 290, 245 330
-            C220 350, 200 335, 205 300 Z
-        "></path>
+                M295 170
+                C320 145 340 125 365 115
+            " fill="none" stroke="#6F625B" stroke-width="4" stroke-linecap="round"></path>
 
 
+        <!-- Rama izquierda -->
         <path d="
-            M135 385
-            C90 350, 55 370, 90 410
-            C115 430, 140 420, 135 385 Z
-        "></path>
+                M170 370
+                C130 345 95 315 75 275
+            " fill="none" stroke="#6F625B" stroke-width="4.5" stroke-linecap="round"></path>
 
 
+        <!-- Rama izquierda secundaria -->
         <path d="
-            M90 500
-            C45 460, 15 485, 50 525
-            C75 545, 100 530, 90 500 Z
-        "></path>
+                M135 435
+                C100 415 70 390 55 355
+            " fill="none" stroke="#6F625B" stroke-width="4" stroke-linecap="round"></path>
 
 
+        <!-- Rama inferior -->
         <path d="
-            M165 470
-            C205 430, 240 455, 205 495
-            C180 515, 160 500, 165 470 Z
-        "></path>
-
-    </g>
+                M105 535
+                C75 505 55 475 55 440
+            " fill="none" stroke="#6F625B" stroke-width="4" stroke-linecap="round"></path>
 
 
-    <!-- Nervaduras sutiles -->
-    <g fill="none" stroke="#6F625B" stroke-width="2" opacity="0.5">
-
-        <path d="M325 95 L355 90"></path>
-        <path d="M270 190 L305 175"></path>
-        <path d="M215 310 L250 290"></path>
-        <path d="M120 395 L85 380"></path>
-        <path d="M75 505 L45 495"></path>
-
-    </g>
+        <!-- Ramita central -->
+        <path d="
+                M215 300
+                C195 270 180 250 165 225
+            " fill="none" stroke="#6F625B" stroke-width="3" stroke-linecap="round"></path>
 
 
-    <!-- Pequeños detalles beige -->
-    <g fill="#E8DED2">
+        <!-- Ramita central derecha -->
+        <path d="
+                M190 340
+                C215 320 235 305 250 285
+            " fill="none" stroke="#6F625B" stroke-width="3" stroke-linecap="round"></path>
 
-        <circle cx="330" cy="75" r="5"></circle>
-        <circle cx="250" cy="165" r="4"></circle>
-        <circle cx="190" cy="285" r="4"></circle>
-        <circle cx="110" cy="365" r="5"></circle>
+
+        <!-- ================================================= -->
+        <!-- HOJAS VERDES -->
+        <!-- ================================================= -->
+
+        <g fill="#A8B5A2">
+
+            <!-- Parte superior -->
+
+            <ellipse cx="305" cy="145" rx="16" ry="7" transform="rotate(-48 305 145)"></ellipse>
+
+            <ellipse cx="280" cy="205" rx="17" ry="7" transform="rotate(35 280 205)"></ellipse>
+
+            <ellipse cx="220" cy="175" rx="15" ry="7" transform="rotate(-55 220 175)"></ellipse>
+
+
+            <!-- Zona central -->
+
+            <ellipse cx="225" cy="250" rx="17" ry="7" transform="rotate(35 225 250)"></ellipse>
+
+            <ellipse cx="180" cy="285" rx="15" ry="7" transform="rotate(-45 180 285)"></ellipse>
+
+            <ellipse cx="145" cy="335" rx="17" ry="7" transform="rotate(35 145 335)"></ellipse>
+
+            <ellipse cx="195" cy="365" rx="15" ry="7" transform="rotate(-35 195 365)"></ellipse>
+
+
+            <!-- Rama izquierda -->
+
+            <ellipse cx="105" cy="315" rx="17" ry="7" transform="rotate(-40 105 315)"></ellipse>
+
+            <ellipse cx="80" cy="350" rx="15" ry="7" transform="rotate(40 80 350)"></ellipse>
+
+            <ellipse cx="95" cy="395" rx="17" ry="7" transform="rotate(-35 95 395)"></ellipse>
+
+
+            <!-- Parte inferior -->
+
+            <ellipse cx="125" cy="450" rx="16" ry="7" transform="rotate(40 125 450)"></ellipse>
+
+            <ellipse cx="105" cy="485" rx="15" ry="7" transform="rotate(-45 105 485)"></ellipse>
+
+            <ellipse cx="75" cy="470" rx="14" ry="6" transform="rotate(35 75 470)"></ellipse>
+
+        </g>
+
+
+        <!-- ================================================= -->
+        <!-- HOJAS MÁS CLARAS -->
+        <!-- ================================================= -->
+
+        <g fill="#B7C1B2" opacity="0.85">
+
+            <ellipse cx="300" cy="145" rx="14" ry="6" transform="rotate(-48 300 145)"></ellipse>
+
+            <ellipse cx="220" cy="175" rx="13" ry="6" transform="rotate(-55 220 175)"></ellipse>
+
+            <ellipse cx="95" cy="395" rx="14" ry="6" transform="rotate(-35 95 395)"></ellipse>
+
+        </g>
+
+
+        <!-- ================================================= -->
+        <!-- FLORES TIPO CEREZO -->
+        <!-- ================================================= -->
+
+
+        <!-- Flor 1 -->
+        <g transform="translate(235 112)">
+
+            <circle cx="0" cy="-9" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="9" cy="-3" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="6" cy="8" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="-6" cy="8" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="-9" cy="-3" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="4" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 2 -->
+        <g transform="translate(365 112)">
+
+            <circle cx="0" cy="-8" r="7" fill="url(#flower)"></circle>
+            <circle cx="8" cy="-3" r="7" fill="url(#flower)"></circle>
+            <circle cx="5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-8" cy="-3" r="7" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3.5" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 3 -->
+        <g transform="translate(165 225)">
+
+            <circle cx="0" cy="-9" r="8" fill="url(#flower)"></circle>
+            <circle cx="9" cy="-3" r="8" fill="url(#flower)"></circle>
+            <circle cx="6" cy="8" r="8" fill="url(#flower)"></circle>
+            <circle cx="-6" cy="8" r="8" fill="url(#flower)"></circle>
+            <circle cx="-9" cy="-3" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="4" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 4 -->
+        <g transform="translate(250 285)">
+
+            <circle cx="0" cy="-8" r="7" fill="url(#flower)"></circle>
+            <circle cx="8" cy="-3" r="7" fill="url(#flower)"></circle>
+            <circle cx="5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-8" cy="-3" r="7" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3.5" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 5 -->
+        <g transform="translate(75 275)">
+
+            <circle cx="0" cy="-9" r="8" fill="url(#flower)"></circle>
+            <circle cx="9" cy="-3" r="8" fill="url(#flower)"></circle>
+            <circle cx="6" cy="8" r="8" fill="url(#flower)"></circle>
+            <circle cx="-6" cy="8" r="8" fill="url(#flower)"></circle>
+            <circle cx="-9" cy="-3" r="8" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="4" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 6 -->
+        <g transform="translate(55 355)">
+
+            <circle cx="0" cy="-8" r="7" fill="url(#flower)"></circle>
+            <circle cx="8" cy="-3" r="7" fill="url(#flower)"></circle>
+            <circle cx="5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-8" cy="-3" r="7" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3.5" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 7 -->
+        <g transform="translate(105 415)">
+
+            <circle cx="0" cy="-8" r="7" fill="url(#flower)"></circle>
+            <circle cx="8" cy="-3" r="7" fill="url(#flower)"></circle>
+            <circle cx="5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-8" cy="-3" r="7" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3.5" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 8 -->
+        <g transform="translate(55 440)">
+
+            <circle cx="0" cy="-8" r="7" fill="url(#flower)"></circle>
+            <circle cx="8" cy="-3" r="7" fill="url(#flower)"></circle>
+            <circle cx="5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-5" cy="7" r="7" fill="url(#flower)"></circle>
+            <circle cx="-8" cy="-3" r="7" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3.5" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- Flor 9 -->
+        <g transform="translate(205 335)">
+
+            <circle cx="0" cy="-7" r="6.5" fill="url(#flower)"></circle>
+            <circle cx="7" cy="-2" r="6.5" fill="url(#flower)"></circle>
+            <circle cx="4" cy="6" r="6.5" fill="url(#flower)"></circle>
+            <circle cx="-4" cy="6" r="6.5" fill="url(#flower)"></circle>
+            <circle cx="-7" cy="-2" r="6.5" fill="url(#flower)"></circle>
+
+            <circle cx="0" cy="0" r="3" fill="#A8B5A2"></circle>
+
+        </g>
+
+
+        <!-- ================================================= -->
+        <!-- PEQUEÑOS CAPULLOS -->
+        <!-- ================================================= -->
+
+        <g fill="#D9C5B8">
+
+            <circle cx="285" cy="190" r="5"></circle>
+            <circle cx="325" cy="145" r="4"></circle>
+            <circle cx="190" cy="250" r="4"></circle>
+            <circle cx="125" cy="350" r="5"></circle>
+            <circle cx="85" cy="425" r="4"></circle>
+
+        </g>
 
     </g>
 
